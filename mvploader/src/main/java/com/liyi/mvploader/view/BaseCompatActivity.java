@@ -4,6 +4,7 @@ package com.liyi.mvploader.view;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import com.liyi.mvploader.presenter.IPresenter;
 
@@ -17,6 +18,15 @@ public abstract class BaseCompatActivity<P extends IPresenter> extends AppCompat
     }
 
     protected abstract P bindPresenter();
+
+    public <T> T $(int resId) {
+        return (T) findViewById(resId);
+    }
+
+    public <T> T $(int resId, View parent) {
+        return (T) parent.findViewById(resId);
+    }
+
 
     @Override
     protected void onDestroy() {
