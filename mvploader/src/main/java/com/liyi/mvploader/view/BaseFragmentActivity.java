@@ -1,5 +1,6 @@
 package com.liyi.mvploader.view;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
@@ -8,7 +9,7 @@ import android.view.View;
 import com.liyi.mvploader.presenter.IPresenter;
 
 
-public abstract class BaseFragmentActivity<P extends IPresenter> extends FragmentActivity {
+public abstract class BaseFragmentActivity<P extends IPresenter> extends FragmentActivity implements IView {
     protected P MvpPre;
 
     @Override
@@ -25,6 +26,11 @@ public abstract class BaseFragmentActivity<P extends IPresenter> extends Fragmen
 
     public <T> T $(int resId, View parent) {
         return (T) parent.findViewById(resId);
+    }
+
+    @Override
+    public Activity getSelfAty() {
+        return this;
     }
 
     @Override
