@@ -32,6 +32,9 @@ public abstract class BaseFragment<P extends IPresenter> extends Fragment implem
     @Override
     public void onDestroy() {
         super.onDestroy();
+        /**
+         * 在生命周期结束时，将presenter与view之间的联系断开，防止出现内存泄露
+         */
         if (MvpPre != null) {
             MvpPre.detachView();
         }

@@ -7,7 +7,7 @@ import java.lang.ref.Reference;
 import java.lang.ref.WeakReference;
 
 public abstract class BasePresenter<V extends IView> implements IPresenter {
-    private Reference<V> MvpRef;
+    protected Reference<V> MvpRef;
 
     public BasePresenter(V view) {
         attachView(view);
@@ -17,14 +17,19 @@ public abstract class BasePresenter<V extends IView> implements IPresenter {
         MvpRef = new WeakReference<V>(view);
     }
 
-    public V getView() {
+    protected V getView() {
         if (MvpRef != null) {
             return MvpRef.get();
         }
         return null;
     }
 
-    public boolean isViewAttach() {
+    /**
+     * 主要用于判断IView的生命周期是否结束，防止出现内存泄露状况
+     *
+     * @return
+     */
+    protected boolean isViewAttach() {
         return MvpRef != null && MvpRef.get() != null;
     }
 
