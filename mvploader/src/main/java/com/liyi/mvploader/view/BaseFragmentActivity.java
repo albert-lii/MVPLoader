@@ -29,7 +29,7 @@ public abstract class BaseFragmentActivity<P extends IPresenter> extends Fragmen
     }
 
     @Override
-    public Activity getSelfAty() {
+    public Activity getSelfActivity() {
         return this;
     }
 

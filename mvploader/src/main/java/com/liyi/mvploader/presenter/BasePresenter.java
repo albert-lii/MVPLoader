@@ -17,14 +17,14 @@ public abstract class BasePresenter<V extends IView> implements IPresenter {
         MvpRef = new WeakReference<V>(view);
     }
 
-    private V getView() {
+    public V getView() {
         if (MvpRef != null) {
             return MvpRef.get();
         }
         return null;
     }
 
-    private boolean isViewAttach() {
+    public boolean isViewAttach() {
         return MvpRef != null && MvpRef.get() != null;
     }
 

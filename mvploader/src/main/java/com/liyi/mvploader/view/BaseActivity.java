@@ -1,7 +1,6 @@
 package com.liyi.mvploader.view;
 
 import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
@@ -29,7 +28,7 @@ public abstract class BaseActivity<P extends IPresenter> extends Activity implem
     }
 
     @Override
-    public Activity getSelfAty() {
+    public Activity getSelfActivity() {
         return this;
     }
 

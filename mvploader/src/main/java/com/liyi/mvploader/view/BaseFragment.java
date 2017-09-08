@@ -25,7 +25,7 @@ public abstract class BaseFragment<P extends IPresenter> extends Fragment implem
     }
 
     @Override
-    public Activity getSelfAty() {
+    public Activity getSelfActivity() {
         return getActivity();
     }
 

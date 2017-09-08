@@ -4,10 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MvpLoader.iml" filepath="$PROJECT_DIR$/MvpLoader.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://E:\Android-Github\MvpLoader\app\app.iml" filepath="E:\Android-Github\MvpLoader\app\app.iml" />
       <module fileurl="file://E:\Android-Github\MvpLoader\mvp-android.iml" filepath="E:\Android-Github\MvpLoader\mvp-android.iml" />
       <module fileurl="file://$PROJECT_DIR$/mvploader/mvploader.iml" filepath="$PROJECT_DIR$/mvploader/mvploader.iml" />
-      <module fileurl="file://E:\Android-Github\MvpLoader\mvploader\mvploader.iml" filepath="E:\Android-Github\MvpLoader\mvploader\mvploader.iml" />
     </modules>
   </component>
 </project>

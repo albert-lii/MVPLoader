@@ -30,7 +30,7 @@ public abstract class BaseCompatActivity<P extends IPresenter> extends AppCompat
     }
 
     @Override
-    public Activity getSelfAty() {
+    public Activity getSelfActivity() {
         return this;
     }
 
