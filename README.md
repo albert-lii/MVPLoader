@@ -24,7 +24,7 @@ Step 2:
 MVP模式中，着重提现出Model与View不直接交互，通过Presenter来进行交互。这样做可以最大程度的做到解耦，当项目变的庞大时，可以更加容易控制。  
 
 在本项目中，我将View中需要和Model进行交互的地方，写在IView接口中，将Model中的方法也写在接口中，Presenter同时获取View的IView接口，和Model的方法接口，在Presenter中通过接口来进行两者交互。Presenter起到一个连接作用。  
-  
+
 此外，在Presenter中持有了View的IView接口后，在极端情况下可能会出现内存泄漏情况，如异步时，当Activity已经关闭，Presenter中才开始调用IView接口中的方法来操纵UI，而此时边可能出现异常，内存泄漏等状况，所以在项目中，还着重对Presenter和View的生命周期进行了处理，当View的生命周期结束时，Presenter持有的IView将从Presenter中解除。
 
 ## 使用方法
