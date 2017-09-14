@@ -27,7 +27,7 @@ MVP模式中，着重提现出Model与View不直接交互，通过Presenter来�
 
 此外，在Presenter中持有了View的IView接口后，在极端情况下可能会出现内存泄漏情况，如异步时，当Activity已经关闭，Presenter中才开始调用IView接口中的方法来操纵UI，而此时边可能出现异常，内存泄漏等状况，所以在项目中，还着重对Presenter和View的生命周期进行了处理，当View的生命周期结束时，Presenter持有的IView将从Presenter中解除。
 
->详情请查阅本人博客：http://blog.csdn.net/liyi1009365545/article/details/77931754
+> **详情请查阅本人博客：http://blog.csdn.net/liyi1009365545/article/details/77931754**
 
 ## 使用方法
 ```Java
@@ -93,6 +93,9 @@ Model:暂无要求
           }
       }
 ```
+
+## 赞赏
+如果你感觉 `MVPLoader` 帮助到了你，可以点右上角 "Star" 支持一下 谢谢！ ^_^
 
 
 ## LICENSE
