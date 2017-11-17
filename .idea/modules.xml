@@ -3,12 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MVPLoader.iml" filepath="$PROJECT_DIR$/MVPLoader.iml" />
+      <module fileurl="file://E:\Android-Github\MVPLoader\MVPLoader.iml" filepath="E:\Android-Github\MVPLoader\MVPLoader.iml" />
       <module fileurl="file://F:\Worksapce-android\github\MVPLoader\MvpLoader.iml" filepath="F:\Worksapce-android\github\MVPLoader\MvpLoader.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://F:\Worksapce-android\github\MVPLoader\app\app.iml" filepath="F:\Worksapce-android\github\MVPLoader\app\app.iml" />
+      <module fileurl="file://E:\Android-Github\MVPLoader\app\app.iml" filepath="E:\Android-Github\MVPLoader\app\app.iml" />
       <module fileurl="file://E:\Android-Github\MvpLoader\mvp-android.iml" filepath="E:\Android-Github\MvpLoader\mvp-android.iml" />
       <module fileurl="file://$PROJECT_DIR$/mvploader/mvploader.iml" filepath="$PROJECT_DIR$/mvploader/mvploader.iml" />
       <module fileurl="file://F:\Worksapce-android\github\MVPLoader\mvploader\mvploader.iml" filepath="F:\Worksapce-android\github\MVPLoader\mvploader\mvploader.iml" />
+      <module fileurl="file://E:\Android-Github\MVPLoader\mvploader\mvploader.iml" filepath="E:\Android-Github\MVPLoader\mvploader\mvploader.iml" />
     </modules>
   </component>
 </project>
