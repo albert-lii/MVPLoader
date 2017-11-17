@@ -20,10 +20,6 @@ public abstract class BaseFragment<P extends IPresenter> extends Fragment implem
 
     protected abstract P bindPresenter();
 
-    public <T> T $(int resId, View parent) {
-        return (T) parent.findViewById(resId);
-    }
-
     @Override
     public Activity getSelfActivity() {
         return getActivity();

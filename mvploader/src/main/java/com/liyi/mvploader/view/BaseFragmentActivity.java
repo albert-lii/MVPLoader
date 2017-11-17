@@ -20,14 +20,6 @@ public abstract class BaseFragmentActivity<P extends IPresenter> extends Fragmen
 
     protected abstract P bindPresenter();
 
-    public <T> T $(int resId) {
-        return (T) findViewById(resId);
-    }
-
-    public <T> T $(int resId, View parent) {
-        return (T) parent.findViewById(resId);
-    }
-
     @Override
     public Activity getSelfActivity() {
         return this;

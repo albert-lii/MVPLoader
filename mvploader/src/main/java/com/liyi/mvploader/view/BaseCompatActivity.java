@@ -21,14 +21,6 @@ public abstract class BaseCompatActivity<P extends IPresenter> extends AppCompat
 
     protected abstract P bindPresenter();
 
-    public <T> T $(int resId) {
-        return (T) findViewById(resId);
-    }
-
-    public <T> T $(int resId, View parent) {
-        return (T) parent.findViewById(resId);
-    }
-
     @Override
     public Activity getSelfActivity() {
         return this;

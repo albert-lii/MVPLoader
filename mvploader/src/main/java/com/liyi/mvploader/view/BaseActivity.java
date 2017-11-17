@@ -19,14 +19,6 @@ public abstract class BaseActivity<P extends IPresenter> extends Activity implem
 
     protected abstract P bindPresenter();
 
-    public <T> T $(int resId) {
-        return (T) findViewById(resId);
-    }
-
-    public <T> T $(int resId, View parent) {
-        return (T) parent.findViewById(resId);
-    }
-
     @Override
     public Activity getSelfActivity() {
         return this;
