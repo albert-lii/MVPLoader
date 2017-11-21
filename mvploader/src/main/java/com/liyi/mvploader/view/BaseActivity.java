@@ -8,7 +8,7 @@ import android.view.View;
 import com.liyi.mvploader.presenter.IPresenter;
 
 
-public abstract class BaseActivity<P extends IPresenter> extends Activity implements IView {
+public abstract class BaseActivity<P extends IPresenter> extends Activity implements IView<Activity> {
     protected P MvpPre;
 
     @Override

@@ -10,7 +10,7 @@ import android.view.View;
 
 import com.liyi.mvploader.presenter.IPresenter;
 
-public abstract class BaseFragment<P extends IPresenter> extends Fragment implements IView {
+public abstract class BaseFragment<P extends IPresenter> extends Fragment implements IView<FragmentActivity> {
     protected P MvpPre;
 
     @Override

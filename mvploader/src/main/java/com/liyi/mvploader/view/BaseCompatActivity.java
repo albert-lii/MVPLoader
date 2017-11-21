@@ -1,16 +1,13 @@
 package com.liyi.mvploader.view;
 
 
-import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 
 import com.liyi.mvploader.presenter.IPresenter;
 
-public abstract class BaseCompatActivity<P extends IPresenter> extends AppCompatActivity implements IView {
+public abstract class BaseCompatActivity<P extends IPresenter> extends AppCompatActivity implements IView<AppCompatActivity> {
     protected P MvpPre;
 
     @Override

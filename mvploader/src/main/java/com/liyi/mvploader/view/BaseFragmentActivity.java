@@ -1,15 +1,13 @@
 package com.liyi.mvploader.view;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
-import android.view.View;
 
 import com.liyi.mvploader.presenter.IPresenter;
 
 
-public abstract class BaseFragmentActivity<P extends IPresenter> extends FragmentActivity implements IView {
+public abstract class BaseFragmentActivity<P extends IPresenter> extends FragmentActivity implements IView<FragmentActivity> {
     protected P MvpPre;
 
     @Override
