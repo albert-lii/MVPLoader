@@ -5,6 +5,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.view.View;
 
 import com.liyi.mvploader.presenter.IPresenter;
@@ -21,7 +22,7 @@ public abstract class BaseFragment<P extends IPresenter> extends Fragment implem
     protected abstract P bindPresenter();
 
     @Override
-    public Activity getSelfActivity() {
+    public FragmentActivity getSelfActivity() {
         return getActivity();
     }
 

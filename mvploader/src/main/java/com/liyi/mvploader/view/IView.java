@@ -1,8 +1,6 @@
 package com.liyi.mvploader.view;
 
 
-import android.app.Activity;
-
-public interface IView {
-    Activity getSelfActivity();
+public interface IView<T> {
+    T getSelfActivity();
 }

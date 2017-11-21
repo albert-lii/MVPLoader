@@ -21,7 +21,7 @@ public abstract class BaseFragmentActivity<P extends IPresenter> extends Fragmen
     protected abstract P bindPresenter();
 
     @Override
-    public Activity getSelfActivity() {
+    public FragmentActivity getSelfActivity() {
         return this;
     }
 

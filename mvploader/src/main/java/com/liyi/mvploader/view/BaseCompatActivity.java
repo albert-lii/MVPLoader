@@ -22,7 +22,7 @@ public abstract class BaseCompatActivity<P extends IPresenter> extends AppCompat
     protected abstract P bindPresenter();
 
     @Override
-    public Activity getSelfActivity() {
+    public AppCompatActivity getSelfActivity() {
         return this;
     }
 

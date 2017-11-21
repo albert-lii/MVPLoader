@@ -27,9 +27,9 @@ public class MainActivity extends BaseActivity<MainPresnter> implements MainCont
     }
 
     private void initUI() {
-        editT_username = $(R.id.editT_username);
-        editT_password = $(R.id.editT_password);
-        btn_login = $(R.id.btn_login);
+        editT_username = (EditText) findViewById(R.id.editT_username);
+        editT_password = (EditText) findViewById(R.id.editT_password);
+        btn_login = (Button) findViewById(R.id.btn_login);
     }
 
     private void addListeners() {
