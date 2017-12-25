@@ -15,7 +15,7 @@ Step 1:
 Step 2:
 
       dependencies {
-          compile 'com.github.albert-lii:MVPLoader:1.0.1'
+          compile 'com.github.albert-lii:MVPLoader:1.0.6'
       }
 ```
 
