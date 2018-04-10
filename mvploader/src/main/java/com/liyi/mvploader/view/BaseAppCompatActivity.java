@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.liyi.mvploader.presenter.IPresenter;
 
-public abstract class BaseCompatActivity<P extends IPresenter> extends AppCompatActivity implements IView<AppCompatActivity> {
+public abstract class BaseAppCompatActivity<P extends IPresenter> extends AppCompatActivity implements IView<AppCompatActivity> {
     protected P MvpPre;
 
     @Override
