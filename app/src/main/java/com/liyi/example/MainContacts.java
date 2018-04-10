@@ -1,6 +1,8 @@
 package com.liyi.example;
 
 
+import android.app.Activity;
+
 import com.liyi.mvploader.presenter.IPresenter;
 import com.liyi.mvploader.view.IView;
 
@@ -8,7 +10,7 @@ import com.liyi.mvploader.view.IView;
  * 创建一个类作为纽带，将view、presenter、model的接口方法都串联在一起，更加便于管理
  */
 public final class MainContacts {
-    public interface IMain extends IView {
+    public interface IMain extends IView<Activity> {
         void showTips(boolean isSucceess);
     }
 
